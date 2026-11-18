@@ -1,0 +1,53 @@
+{
+  "generalSettings": {
+    "restrictions": {
+      "title": "Restrictions WooCommerce",
+      "description": "Configurez les restrictions WooCommerce standard pour les fournisseurs de paiement.",
+      "allowedOnlyFor": {
+        "title": "Autorisé uniquement pour"
+      },
+      "availableForCountries": {
+        "title": "Disponible pour les pays"
+      },
+      "availableFor": {
+        "title": "Disponible pour"
+      },
+      "error": "Échec de l'enregistrement des restrictions.",
+      "message": "Restrictions enregistrées avec succès."
+    },
+    "paymentSettings": {
+      "sessionTimeout": {
+        "title": "Expiration de session",
+        "description": "Définit la durée de validité de la session de la page de paiement et le délai au-delà duquel une commande impayée est considérée comme abandonnée. Le délai démarre lorsque le client clique sur « Payer ». À son expiration, la page de paiement n’accepte plus le paiement, la commande est marquée comme échouée et les articles réservés sont remis en stock.",
+        "values": {
+          "oneHour": "En 1 heure",
+          "threeHours": "Dans 3 heures",
+          "sixHours": "Dans 6 heures",
+          "twelveHours": "Dans 12 heures",
+          "eighteenHours": "Dans 18 heures",
+          "twentyFourHours": "Dans 24 heures",
+          "custom": "Personnalisé"
+        }
+      },
+      "enableSavedCards": {
+        "title": "Activer les cartes enregistrées",
+        "description": "Lorsque cette option est activée, les clients connectés peuvent enregistrer une carte lors du paiement et la réutiliser ultérieurement, et leurs cartes enregistrées leur sont proposées au moment du paiement. Lorsqu'elle est désactivée, l'enregistrement n'est jamais proposé et les cartes enregistrées sont masquées. L'enregistrement de carte n'est jamais proposé aux clients invités, quel que soit ce réglage."
+      },
+      "sessionTimeoutCustom": {
+        "title": "Valeur d’expiration de session",
+        "description": "Configurez la valeur de timeout, de 1 à 1440 minutes",
+        "error": "La valeur d’expiration de session doit être un nombre entier de minutes compris entre 1 et 1440."
+      }
+    }
+  },
+  "payments": {
+    "configure": {
+      "fields": {
+        "buttonTitle": {
+          "label": "Titre du bouton de paiement",
+          "description": "Texte personnalisé pour le bouton de paiement lorsque ce moyen de paiement est sélectionné. Laisser vide pour la valeur par défaut."
+        }
+      }
+    }
+  }
+}

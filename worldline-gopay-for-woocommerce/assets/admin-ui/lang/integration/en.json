@@ -1,0 +1,53 @@
+{
+  "generalSettings": {
+    "paymentSettings": {
+      "sessionTimeout": {
+        "title": "Session timeout",
+        "description": "Defines how long the payment page session lasts and after how long an unpaid order is considered abandoned. The timer starts when the customer clicks \"Pay\". When it elapses, the payment page no longer accepts the payment, the order is marked as failed and its reserved items are released back into the inventory.",
+        "values": {
+          "oneHour": "In 1 hour",
+          "threeHours": "In 3 hours",
+          "sixHours": "In 6 hours",
+          "twelveHours": "In 12 hours",
+          "eighteenHours": "In 18 hours",
+          "twentyFourHours": "In 24 hours",
+          "custom": "Custom"
+        }
+      },
+      "enableSavedCards": {
+        "title": "Enable Saved Cards",
+        "description": "When enabled, logged-in customers can save a card while paying and pay with it again later, and their saved cards are offered at checkout. When disabled, saving is never offered and saved cards are hidden. Guests are never offered card saving, regardless of this setting."
+      },
+      "sessionTimeoutCustom": {
+        "title": "Session timeout value",
+        "description": "Configure the timeout value, from 1 to 1440 minutes",
+        "error": "The session timeout value must be a whole number of minutes between 1 and 1440."
+      }
+    },
+    "restrictions": {
+      "title": "WooCommerce Restrictions",
+      "description": "Configure the standard WooCommerce restrictions for payment providers.",
+      "allowedOnlyFor": {
+        "title": "Allowed only for"
+      },
+      "availableForCountries": {
+        "title": "Available for countries"
+      },
+      "availableFor": {
+        "title": "Available for"
+      },
+      "error": "Failed to save restrictions.",
+      "message": "Restrictions successfully saved."
+    }
+  },
+  "payments": {
+    "configure": {
+      "fields": {
+        "buttonTitle": {
+          "label": "Payment button title",
+          "description": "Custom text for the checkout button when this payment method is selected. Leave empty for the default."
+        }
+      }
+    }
+  }
+}

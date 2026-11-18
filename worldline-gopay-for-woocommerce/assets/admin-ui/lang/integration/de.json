@@ -1,0 +1,53 @@
+{
+  "generalSettings": {
+    "restrictions": {
+      "title": "WooCommerce-Einschränkungen",
+      "description": "Konfigurieren Sie die standardmäßigen WooCommerce-Einschränkungen für Zahlungsanbieter.",
+      "allowedOnlyFor": {
+        "title": "Nur erlaubt für"
+      },
+      "availableForCountries": {
+        "title": "Verfügbar für Länder"
+      },
+      "availableFor": {
+        "title": "Verfügbar für"
+      },
+      "error": "Einschränkungen konnten nicht gespeichert werden.",
+      "message": "Einschränkungen erfolgreich gespeichert."
+    },
+    "paymentSettings": {
+      "sessionTimeout": {
+        "title": "Sitzungs-Timeout",
+        "description": "Legt fest, wie lange die Sitzung der Zahlungsseite gültig ist und nach welcher Zeit eine unbezahlte Bestellung als abgebrochen gilt. Der Timer startet, wenn der Kunde auf „Bezahlen“ klickt. Nach Ablauf nimmt die Zahlungsseite keine Zahlung mehr an, die Bestellung wird als fehlgeschlagen markiert und die reservierten Artikel werden wieder dem Lagerbestand zugeführt.",
+        "values": {
+          "oneHour": "In 1 Stunde",
+          "threeHours": "In 3 Stunden",
+          "sixHours": "In 6 Stunden",
+          "twelveHours": "In 12 Stunden",
+          "eighteenHours": "In 18 Stunden",
+          "twentyFourHours": "In 24 Stunden",
+          "custom": "Benutzerdefiniert"
+        }
+      },
+      "enableSavedCards": {
+        "title": "Gespeicherte Karten aktivieren",
+        "description": "Wenn diese Option aktiviert ist, können angemeldete Kunden während der Zahlung eine Karte speichern und später erneut damit bezahlen, und ihre gespeicherten Karten werden im Checkout angeboten. Wenn sie deaktiviert ist, wird das Speichern nie angeboten und gespeicherte Karten werden ausgeblendet. Gästen wird das Speichern einer Karte unabhängig von dieser Einstellung nie angeboten."
+      },
+      "sessionTimeoutCustom": {
+        "title": "Sitzungs-Timeout-Wert",
+        "description": "Konfigurieren Sie den Timeout-Wert, von 1 bis 1440 Minuten",
+        "error": "Der Sitzungs-Timeout-Wert muss eine ganze Zahl von Minuten zwischen 1 und 1440 sein."
+      }
+    }
+  },
+  "payments": {
+    "configure": {
+      "fields": {
+        "buttonTitle": {
+          "label": "Titel der Zahlungsschaltfläche",
+          "description": "Eigener Text für die Checkout-Schaltfläche, wenn diese Zahlungsart ausgewählt ist. Leer lassen für den Standard."
+        }
+      }
+    }
+  }
+}

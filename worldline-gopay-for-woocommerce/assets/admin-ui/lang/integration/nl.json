@@ -1,0 +1,53 @@
+{
+  "generalSettings": {
+    "restrictions": {
+      "title": "WooCommerce-beperkingen",
+      "description": "Configureer de standaard WooCommerce-beperkingen voor betalingsproviders.",
+      "allowedOnlyFor": {
+        "title": "Alleen toegestaan voor"
+      },
+      "availableForCountries": {
+        "title": "Beschikbaar voor landen"
+      },
+      "availableFor": {
+        "title": "Beschikbaar voor"
+      },
+      "error": "Beperkingen konden niet worden opgeslagen.",
+      "message": "Beperkingen succesvol opgeslagen."
+    },
+    "paymentSettings": {
+      "sessionTimeout": {
+        "title": "Sessietime-out",
+        "description": "Bepaalt hoe lang de sessie van de betaalpagina geldig is en na hoeveel tijd een onbetaalde bestelling als verlaten wordt beschouwd. De timer start wanneer de klant op \"Betalen\" klikt. Na afloop accepteert de betaalpagina de betaling niet meer, wordt de bestelling als mislukt gemarkeerd en gaan de gereserveerde artikelen terug naar de voorraad.",
+        "values": {
+          "oneHour": "In 1 uur",
+          "threeHours": "In 3 uur",
+          "sixHours": "In 6 uur",
+          "twelveHours": "In 12 uur",
+          "eighteenHours": "In 18 uur",
+          "twentyFourHours": "In 24 uur",
+          "custom": "Aangepast"
+        }
+      },
+      "enableSavedCards": {
+        "title": "Opgeslagen kaarten inschakelen",
+        "description": "Wanneer dit is ingeschakeld, kunnen ingelogde klanten tijdens het betalen een kaart opslaan en er later opnieuw mee betalen, en worden hun opgeslagen kaarten bij het afrekenen aangeboden. Wanneer het is uitgeschakeld, wordt opslaan nooit aangeboden en worden opgeslagen kaarten verborgen. Aan gasten wordt het opslaan van een kaart nooit aangeboden, ongeacht deze instelling."
+      },
+      "sessionTimeoutCustom": {
+        "title": "Sessietime-outwaarde",
+        "description": "Configureer de time-outwaarde, van 1 tot 1440 minuten",
+        "error": "De sessietime-outwaarde moet een geheel aantal minuten tussen 1 en 1440 zijn."
+      }
+    }
+  },
+  "payments": {
+    "configure": {
+      "fields": {
+        "buttonTitle": {
+          "label": "Titel betaalknop",
+          "description": "Aangepaste tekst voor de afrekenknop wanneer deze betaalmethode is geselecteerd. Laat leeg voor de standaardwaarde."
+        }
+      }
+    }
+  }
+}

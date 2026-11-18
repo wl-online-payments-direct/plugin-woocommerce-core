@@ -1,0 +1,156 @@
+.wlop-meta {
+    margin-top: 6px;
+}
+
+.wlop-payment {
+    margin-bottom: 18px;
+}
+
+.wlop-payment-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #c3c4c7;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+}
+
+.wlop-payment-title {
+    font-weight: 600;
+}
+
+.wlop-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.wlop-col {
+    flex: 1;
+    min-width: 240px;
+}
+
+.wlop-col h4 {
+    border-bottom: 1px solid #f0f0f1;
+    color: #1d2327;
+    font-size: 14px;
+    margin: 0 0 10px;
+    padding-bottom: 10px;
+}
+
+.wlop-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 5px 0;
+}
+
+.wlop-label {
+    color: #72777c;
+}
+
+.wlop-val {
+    color: #1d2327;
+    font-weight: 600;
+    text-align: right;
+}
+
+.wlop-actions {
+    margin-top: 14px;
+    border-top: 1px solid #f0f0f1;
+    padding-top: 12px;
+}
+
+.wlop-row-total {
+    border-top: 1px solid #c3c4c7;
+    margin-top: 4px;
+    padding-top: 8px;
+}
+
+.wlop-row-total .wlop-label,
+.wlop-row-total .wlop-val {
+    color: #1d2327;
+    font-weight: 700;
+}
+
+/* Inline Capture/Cancel slide-in panel (sits in the order-data area like WooCommerce's native
+   refund panel; reuses WC's .wc-order-data-row / .wc-order-totals styling). */
+.wlop-action-panel {
+    box-sizing: border-box;
+}
+
+.wlop-action-panel .wc-order-totals {
+    width: 100%;
+}
+
+.wlop-action-panel .wc-order-totals .label {
+    text-align: right;
+    padding-right: 12px;
+}
+
+.wlop-action-panel .wlop-panel-amount {
+    text-align: right;
+    display: inline-block;
+}
+
+.wlop-panel-footer {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 14px;
+    padding: 14px 0 4px;
+    border-top: 1px solid #dfdfdf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Per-line Qty / total / tax inputs injected into the order items table while a panel is open. */
+.wlop-edit {
+    margin-top: 6px;
+}
+
+.wlop-edit input.wlop-line-qty {
+    width: 60px;
+}
+
+.wlop-edit input.wlop-line-total,
+.wlop-edit input.wlop-line-tax {
+    width: 80px;
+}
+
+
+.wlop-panel-error {
+    color: #b32d2e;
+    font-weight: 600;
+    margin: 8px 0 0;
+    text-align: right;
+}
+
+.wlop-order-locked .order_data_column a.edit_address {
+    display: none !important;
+}
+
+#woocommerce-order-items .wc-order-totals.wlop-wero-refund .total {
+    width: 16em;
+}
+
+#woocommerce-order-items .wc-order-totals .total select.wlop-refund-reason {
+    box-sizing: border-box;
+    float: right;
+    max-width: none;
+    min-width: 0;
+    width: 96%;
+}
+
+.wlop-wero-note {
+    background: #eaf4fc;
+    border-left: 4px solid #72aee6;
+    box-sizing: border-box;
+    color: #1d2327;
+    margin: 6px 0 2px auto;
+    max-width: 100%;
+    padding: 8px 12px;
+    text-align: left;
+}

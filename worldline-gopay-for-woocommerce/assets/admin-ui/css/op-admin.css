@@ -1,0 +1,213 @@
+/* Payment-method side menu: fixed to the viewport so it stays on screen even when opening a
+   method far down a long list. The dark mask covers the WooCommerce content area (right of the
+   admin menu) so it still reads as part of the settings form, and a short fade + slide entrance
+   avoids the panel flying in from off-screen (a fixed element can't be clipped to the form). */
+#op-page .op-dark-mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 160px;
+    height: 100%;
+}
+
+/* The core admin-ui slides the whole form left to "make room" for the drawer: opening a panel
+   adds .op-settings-modal-opened to .op-payments-page, which flips justify-content to flex-start
+   and adds margin-left: 10% (core payments.scss). We dock the drawer inside the form instead, so
+   keep the form's horizontal layout identical whether the panel is open or closed - it must not move. */
+#op-page .op-payments-page.op-settings-modal-opened {
+    justify-content: center;
+    margin-left: 0;
+}
+
+#op-page .op-sliding-modal {
+    position: fixed;
+    top: 92px;
+    right: 0;
+    height: calc(100vh - 92px);
+    transform: translateX(20px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#op-page .op-sliding-modal.op-open {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#op-page .op-header-menu {
+    top: 318px;
+    width: 95vw;
+    right: 11px;
+}
+
+#op-page .op-notifications-page .op-table-heading .op-search-wrapper .op-search-container .op-search-field-wrapper .op-search-input
+{
+    padding: 10px 12px 10px 36px !important
+}
+
+#op-page main {
+    flex-grow: 1;
+    width: 100%;
+    max-height: max-content;
+    overflow: visible;
+    min-width: 100%;
+}
+
+/* Single-language store: the per-language switcher is a static indicator, not a dropdown.
+   The toggle handler lives on .op-lang-dropdown, so it must be disabled there (not on the
+   inner .op-lang-btn, where clicks would just fall through to the parent). */
+#op-page .op-lang-dropdown {
+    pointer-events: none;
+    cursor: default;
+}
+
+#op-page .op-lang-label-input {
+    pointer-events: auto;
+    cursor: text;
+}
+
+/* Warning above the Settings page sections (e.g. webhook credentials migrated from the previous
+   plugin version were not accepted): aligned with the card padding and separated from the first card. */
+#op-page .op-settings-page > .op-alert {
+    width: auto;
+    margin: 0 20px 24px;
+}
+
+#op-page .op-settings-page > .op-alert.opt--warning {
+    align-items: flex-start;
+    padding: 16px 16px 16px 18px;
+    border: 1px solid #F5C77E;
+    border-left: 5px solid #E8890C;
+    border-radius: 6px;
+    background-color: #FFF8EC;
+    color: #5C3B0A;
+}
+
+#op-page .op-settings-page > .op-alert.opt--warning .opp-alert-title {
+    gap: 14px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+#op-page .op-settings-page > .op-alert.opt--warning .opp-alert-title:before {
+    top: 0;
+    font-size: 22px;
+    color: #E8890C;
+}
+
+/* Migration notice (data copied from the previous plugin): rendered by the admin page template between
+   the header and the page holder, so it stays on top of every tab. One line with the summary and a
+   "Details" toggle (native <details>, no JavaScript); teal info style, orange when something failed. */
+/* The content holder is a flex column with a 24px gap; pull the notice up so it sits 12px below the header. */
+#op-page #op-migration-notice-holder {
+    padding: 0 24px;
+    margin: -12px 0 0;
+}
+
+/* The notice is server-rendered, the rest of the UI by the admin app: keep it hidden until the app has
+   rendered the header, so it does not show alone while the page loads. */
+#op-page #op-main-header:empty + #op-migration-notice-holder {
+    display: none;
+}
+
+#op-page .op-migration-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 14px 12px 16px;
+    border-left: 4px solid #007B7C;
+    border-radius: 4px;
+    background-color: #EAF5F5;
+    color: #1E1E1E;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#op-page .op-migration-notice.opt--warning {
+    border-left-color: #E8890C;
+    background-color: #FFF8EC;
+    color: #5C3B0A;
+}
+
+#op-page .op-migration-notice .opp-migration-notice-icon {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin-top: 1px;
+    background: no-repeat center / 18px 18px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23007B7C' stroke-width='2'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cline x1='12' y1='11' x2='12' y2='17'/%3E%3Ccircle cx='12' cy='7.5' r='.6' fill='%23007B7C'/%3E%3C/svg%3E");
+}
+
+#op-page .op-migration-notice.opt--warning .opp-migration-notice-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E8890C' stroke-width='2'%3E%3Cpath d='M12 3 2 21h20L12 3z'/%3E%3Cline x1='12' y1='10' x2='12' y2='15'/%3E%3Ccircle cx='12' cy='18' r='.6' fill='%23E8890C'/%3E%3C/svg%3E");
+}
+
+#op-page .op-migration-notice .opp-migration-notice-body {
+    flex: 1;
+    min-width: 0;
+}
+
+#op-page .op-migration-notice summary {
+    display: block;
+    cursor: pointer;
+    list-style: none;
+}
+
+#op-page .op-migration-notice summary::-webkit-details-marker {
+    display: none;
+}
+
+#op-page .op-migration-notice .opp-migration-notice-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #007B7C;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+#op-page .op-migration-notice.opt--warning .opp-migration-notice-toggle {
+    color: #A45F06;
+}
+
+/* Chevron, vertically centred on the text line; turns to point up while the details are open. */
+#op-page .op-migration-notice .opp-migration-notice-toggle::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-right: 1.6px solid currentColor;
+    border-bottom: 1.6px solid currentColor;
+    transform: translateY(-2px) rotate(45deg);
+    transition: transform 0.2s ease;
+}
+
+#op-page .op-migration-notice details[open] .opp-migration-notice-toggle::after {
+    transform: translateY(2px) rotate(-135deg);
+}
+
+#op-page .op-migration-notice .opp-migration-notice-details {
+    margin-top: 8px;
+    color: #3C434A;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+#op-page .op-migration-notice .opp-migration-notice-details p {
+    margin: 0 0 4px;
+}
+
+#op-page .op-migration-notice .opp-migration-notice-text a {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+#op-page .op-migration-notice .opp-migration-notice-dismiss {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    background: no-repeat center / 12px 12px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' stroke='%235A6B6B' stroke-width='1.6'%3E%3Cline x1='1' y1='1' x2='11' y2='11'/%3E%3Cline x1='11' y1='1' x2='1' y2='11'/%3E%3C/svg%3E");
+}

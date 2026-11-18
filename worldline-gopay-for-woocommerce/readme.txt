@@ -1,0 +1,197 @@
+=== Worldline GoPay for WooCommerce ===
+Contributors: worldlineisv
+Tags: woocommerce, Worldline, payments, ecommerce
+Requires at least: 6.3
+Tested up to: 7.1
+Requires PHP: 7.4
+WC requires at least: 8.6
+WC tested up to: 11.2
+Stable tag: 3.0.0
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+== Description ==
+
+== Worldline GoPay for WooCommerce ==
+
+Accept credit/debit cards, digital wallets, and over a dozen local payment methods with a fast, secure checkout that boosts conversions and builds customer trust.
+
+* Quick and frictionless checkout experience
+* Customisable checkout pages
+* Support for the most popular global payment methods (Visa, MasterCard, Google Pay, Apple Pay, American Express, PayPal, Klarna, etc.)
+* 15+ local payment methods supported (iDEAL, Carte Bancaire, Bizum, Bancontact, etc.)
+* Authorisation and Direct Sale modes for transactions
+* Cancellations, captures and refunds management
+* Seamless exemption management
+* PSD2 and PCI-DSS compliant
+* Localised payment experience in 100+ countries
+* Multistore support
+* No-code setup
+
+== Optimise your payment pages and boost conversion rates by up to 35% ==
+
+Customise the design of your checkout page and give shoppers the payment options they know and trust. Activate popular local payment methods and create a more familiar checkout experience for international customers. A personalised checkout experience reduces cart abandonment rates and maximises conversion rates in every market you sell in.
+
+== Features ==
+
+= Faster checkout =
+
+Use Worldline’s plugin to easily implement a checkout page on your store while avoiding the most common checkout errors. Let your customers either pay directly on your store with an embedded checkout page ([Hosted Tokenization Page](https://docs.direct.worldline-solutions.com/en/integration/basic-integration-methods/hosted-tokenization-page)) or get redirected to a secure Worldline page ([Hosted Checkout Page](https://docs.direct.worldline-solutions.com/en/integration/basic-integration-methods/hosted-checkout-page)) while keeping your shop PCI-compliant.
+
+= Customisable checkout pages =
+
+Make your checkout feel like a natural extension of your brand. This plugin offers customisable checkout templates, allowing you to match your store’s design, colours, and tone.
+
+Whether you want a minimalist payment form or a fully branded checkout, the plugin gives you flexible options to reinforce trust and keep shoppers engaged.
+
+= Global payments =
+
+Let your customers pay how they want — with credit card, digital wallet, bank transfer, mealvouchers, and more. Worldline’s WooCommerce plugin supports over 25 global and local payment methods across more than 100 countries and 150 currencies.
+
+You can enable or disable methods individually, set your preferred payment gateway titles, and fine-tune the checkout button text — all from your WooCommerce dashboard.
+
+= Multistore support =
+
+Selling across multiple stores or regions? This plugin is fully compatible with WooCommerce multistore setups, including multisite installations.
+
+Each store in your network can have its own independent payment configuration, including API keys, payment methods, currencies, and checkout behaviours. This gives you complete control when managing localised stores, marketplace-style setups, or international storefronts.
+
+== Supported Payment Methods and Currencies ==
+
+Worldline’s GoPay plugin supports over 25 global and local payment methods, including:
+
+* Credit and debit cards (Mastercard, Visa, American Express, Cartes Bancaires, etc.)
+* Bank transfers
+* Digital wallets (Apple Pay, Google Pay, PayPal, etc.)
+* Buy now, pay later providers (e.g., Klarna)
+* Local payment methods (EPS, iDEAL, Bancontact, P24, Twint, etc.)
+* Mealvouchers
+
+You can accept payments in 150+ currencies and serve customers in 100+ countries, ensuring a localised and conversion-friendly experience for every buyer — no matter where they are.
+
+= Add Worldline payments to your WooCommerce store today =
+
+Choose the secure, reliable, and future-ready payments solution designed to support your store at every stage of growth. Install the Worldline GoPay WooCommerce plugin in just a few clicks and start accepting payments across 100+ countries immediately.
+
+= About Worldline =
+
+Worldline is a leading global payments company with a unique mission: to turn payments from a simple necessity into a strategic advantage. As Europe’s leading payment service provider and ranked among the top worldwide, we power secure, frictionless online payment experiences.
+
+We combine scale (over 18,000 professionals operating in 40+ countries), cutting-edge payment technology and deep industry expertise to support more than 1.4 million businesses across 170+ markets. Whether you are a small shop or a large marketplace, our solutions are designed to fit your needs — helping you grow quickly, simply, and securely.
+
+== Screenshots ==
+
+1. Everything you need to accept online payments in just a few clicks
+2. See all of your transactions in WooCommerce orders dashboard
+3. Secure configuration for API keys, webhooks, and environments
+4. Configure available payment methods to match your business needs
+5. Pay using various payment methods
+6. Speed up purchases with single payment methods
+7. Monitor plugin activity with Logs and Webhooks
+8. Monitor real-time transaction and account statistics
+9. Manage, track, and refund your transactions with ease
+
+== Installation ==
+
+= Requirements =
+
+To install and configure the Worldline GoPay for WooCommerce plugin, you’ll need:
+
+* WordPress Version 6.3 (or newer) installed.
+* An active WooCommerce store version 8.6 (or newer).
+* PHP version 7.4 or newer.
+* Worldline Merchant Account
+
+= Installation steps =
+
+1. Log in to your WordPress Admin panel.
+2. Navigate to Plugins > Add New.
+3. Search for the “Worldline GoPay for WooCommerce” plugin.
+4. Click on Install Now and wait until the installation finishes.
+5. Click the Activate button on the success page (or activate it later in Plugins > Installed Plugins).
+
+= Configuration =
+
+**Connection**
+
+1. After activating the Worldline GoPay for WooCommerce plugin, navigate to WooCommerce > Settings > Payments.
+2. Click “Manage” on Worldline GoPay for WooCommerce.
+3. Fill in the PSPID, API Key, and API Secret fields (live/test depending on your environment) from your Worldline Merchant Portal (Developer > Payment API).
+
+**Webhooks**
+
+1. Navigate to Developer > Webhooks inside Worldline Merchant Portal and click “Generate webhook keys”.
+2. Copy the generated details into the fields “Webhook ID” and “Webhook Secret” inside the plugin.
+3. The URL(s) listed below will be used for transactions from this store, and any webhook URL(s) configured in the merchant portal will be ignored. You can add up to 4 additional webhook URLs in “Additional Webhook URLs”.
+
+After filling connection and webhook configuration fields,  Click on “Save changes” to store these settings in the plugin.
+For more information on configuring the Worldline GoPay for WooCommerce plugin, check out our [official onboarding guide](https://docs.direct.worldline-solutions.com/en/integration/how-to-integrate/plugins/woocommerce).
+
+= Updating =
+
+The Worldline GoPay for WooCommerce plugin can be updated both manually and automatically. However, we still recommend backing up your site regularly, just in case.
+
+If you encounter any issues with the plugin or its functions after an update, purge your website cache.
+
+If that doesn’t solve the problem, create a thread on the [support forums](https://wordpress.org/support/plugin/worldline-gopay-for-woocommerce/) or contact our support team through [this form](https://docs.direct.worldline-solutions.com/en/about/contact/).
+
+== Changelog ==
+
+= 3.0.0 - 2026-11-18 =
+* Initial version of the WooCommerce plugin on the Core architecture
+
+== Frequently Asked Questions ==
+
+= How do I start using Worldline GoPay with WooCommerce? =
+
+To start using the Worldline GoPay for WooCommerce plugin, you need to:
+
+1. Install the plugin.
+2. [Create a Worldline Merchant Account.](https://docs.direct.worldline-solutions.com/en/getting-started/)
+3. Enter your API credentials into the plugin settings.
+4. Enable your desired payment methods.
+
+You are then ready to start processing payments on your WooCommerce store!
+
+For a more detailed guide on configuring your WooCommerce plugin, please [refer to our official documentation.](https://docs.direct.worldline-solutions.com/en/integration/api-developer-guide/authentication)
+
+= How do I set up the Worldline GoPay for WooCommerce plugin =
+
+You can follow the steps outlined in the “Installation” tab on this page to install the plugin on your WooCommerce shop. Alternatively, you can find a more detailed installation guide on our [documentation website](https://docs.direct.worldline-solutions.com/en/integration/how-to-integrate/plugins/woocommerce).
+
+= Do I need a Worldline merchant account to use this plugin? =
+
+Yes, you need to create a Worldline Merchant Account to use this plugin. However, you can first [request a free test account](https://signup.direct.preprod.worldline-solutions.com/) to explore the plugin’s features before committing to it.
+
+= What are the requirements to use the plugin? =
+
+To use the Worldline GoPay for WooCommerce plugin, you need to meet the following requirements:
+
+* You need to have an active WooCommerce store version 8.6. or newer.
+* You need to update your WordPress to version 6.3. or newer.
+* You need PHP version 7.4 or newer.
+* You need to have an active Worldline Merchant Account to process live payments.
+
+= Do I need to be PCI-DSS certified to use this plugin? =
+
+Yes, but you only need the lowest PCI-DSS certification (SAQ-A) when using Worldline GoPay for WooCommerce plugin. Its design ensures that all sensitive data is handled by Worldline directly.
+
+You can get the required SAQ-A certification level by filling in a Self-Assessment Questionnaire you can [find and download on our official documentation portal](https://docs.direct.worldline-solutions.com/en/security-and-risk-management/security/pci-dss).
+
+= How can I test the Worldline GoPay for WooCommerce plugin? =
+
+You can use a [Worldline test account](https://signup.direct.preprod.worldline-solutions.com/) to simulate payments before connecting a live Merchant Account. When you log into your test account, you can complete payments using test cards without affecting live data.
+
+= What type of logging or debugging tools are available? =
+
+The Worldline GoPay for WooCommerce plugin stores log data of API calls, webhooks, and transaction events for up to 14 days for debugging purposes. You can use this log data to communicate with our support team more efficiently and with fewer back-and-forth emails should any issue arise.
+
+Our support team is at your disposal for anything from interpreting your log data to providing assistance with debugging. Get in touch with any questions or issues through [this form](https://docs.direct.worldline-solutions.com/en/about/contact/).
+
+= Does the plugin support WooCommerce Subscriptions? =
+
+Unfortunately, no. The plugin doesn’t currently support WooCommerce subscriptions.
+
+= How can I contact Worldline GoPay for WooCommerce plugin support? =
+
+If you need help setting up the plugin, we recommend reviewing our [official plugin documentation](https://docs.direct.worldline-solutions.com/en/integration/how-to-integrate/plugins/woocommerce). In case you need additional support, please create a new thread on the support forums or contact our support team through [this form](https://docs.direct.worldline-solutions.com/en/about/contact/).

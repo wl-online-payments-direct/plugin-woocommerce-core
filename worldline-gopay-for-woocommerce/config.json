@@ -1,0 +1,16 @@
+{
+  "BRAND": "WOP",
+  "MODULE_NAME": "worldlineop",
+  "GATEWAY_PREFIX": "worldline-gopay",
+  "VERSION": "3.0.0",
+  "NAME": "Worldline GoPay",
+  "AUTHOR": "Worldline GoPay",
+  "DESCRIPTION": "This module offers a 1-click integration to start accepting payments and grow your revenues by offering your customers with global and regional payment methods to sell across Europe.",
+  "HELP_LINK": "https://docs.direct.worldline-solutions.com/en/integration/how-to-integrate/plugins/woocommerce",
+  "CONTACT_LINK": "https://docs.direct.worldline-solutions.com/en/about/contact/index",
+  "GITHUB_ENDPOINT": "https://api.github.com/repos/logeecom/worldline-direct-woocommerce/releases/latest",
+  "SLUG": "worldline-gopay-for-woocommerce",
+  "ENTRY_FILE": "worldline-gopay-for-woocommerce.php",
+  "NAMESPACE_PREFIX": "WOP",
+  "TEXT_DOMAIN": "worldline-gopay-for-woocommerce"
+}

@@ -1,0 +1,53 @@
+{
+  "generalSettings": {
+    "restrictions": {
+      "title": "Restrizioni WooCommerce",
+      "description": "Configura le restrizioni WooCommerce standard per i fornitori di pagamento.",
+      "allowedOnlyFor": {
+        "title": "Consentito solo per"
+      },
+      "availableForCountries": {
+        "title": "Disponibile per i paesi"
+      },
+      "availableFor": {
+        "title": "Disponibile per"
+      },
+      "error": "Salvataggio delle restrizioni non riuscito.",
+      "message": "Restrizioni salvate correttamente."
+    },
+    "paymentSettings": {
+      "sessionTimeout": {
+        "title": "Timeout di sessione",
+        "description": "Definisce la durata della sessione della pagina di pagamento e dopo quanto tempo un ordine non pagato viene considerato abbandonato. Il timer parte quando il cliente fa clic su «Paga». Alla scadenza, la pagina di pagamento non accetta più il pagamento, l’ordine viene contrassegnato come non riuscito e gli articoli riservati tornano disponibili in magazzino.",
+        "values": {
+          "oneHour": "In 1 ora",
+          "threeHours": "Tra 3 ore",
+          "sixHours": "Tra 6 ore",
+          "twelveHours": "Tra 12 ore",
+          "eighteenHours": "Tra 18 ore",
+          "twentyFourHours": "Tra 24 ore",
+          "custom": "Personalizzato"
+        }
+      },
+      "enableSavedCards": {
+        "title": "Abilita carte salvate",
+        "description": "Quando questa opzione è attiva, i clienti che hanno effettuato l'accesso possono salvare una carta durante il pagamento e riutilizzarla in seguito, e le loro carte salvate vengono proposte al momento del pagamento. Quando è disattivata, il salvataggio non viene mai proposto e le carte salvate vengono nascoste. Ai clienti ospiti il salvataggio della carta non viene mai proposto, indipendentemente da questa impostazione."
+      },
+      "sessionTimeoutCustom": {
+        "title": "Valore di timeout di sessione",
+        "description": "Configura il valore di timeout, da 1 a 1440 minuti",
+        "error": "Il valore di timeout di sessione deve essere un numero intero di minuti compreso tra 1 e 1440."
+      }
+    }
+  },
+  "payments": {
+    "configure": {
+      "fields": {
+        "buttonTitle": {
+          "label": "Titolo del pulsante di pagamento",
+          "description": "Testo personalizzato per il pulsante di checkout quando questo metodo di pagamento è selezionato. Lasciare vuoto per il valore predefinito."
+        }
+      }
+    }
+  }
+}

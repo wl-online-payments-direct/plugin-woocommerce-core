@@ -1,0 +1,53 @@
+{
+  "generalSettings": {
+    "restrictions": {
+      "title": "Restricciones de WooCommerce",
+      "description": "Configure las restricciones estándar de WooCommerce para los proveedores de pago.",
+      "allowedOnlyFor": {
+        "title": "Permitido solo para"
+      },
+      "availableForCountries": {
+        "title": "Disponible para países"
+      },
+      "availableFor": {
+        "title": "Disponible para"
+      },
+      "error": "No se pudieron guardar las restricciones.",
+      "message": "Restricciones guardadas correctamente."
+    },
+    "paymentSettings": {
+      "sessionTimeout": {
+        "title": "Tiempo de expiración de sesión",
+        "description": "Define cuánto dura la sesión de la página de pago y después de cuánto tiempo un pedido no pagado se considera abandonado. El temporizador empieza cuando el cliente hace clic en «Pagar». Cuando vence, la página de pago ya no acepta el pago, el pedido se marca como fallido y los artículos reservados vuelven al inventario.",
+        "values": {
+          "oneHour": "En 1 hora",
+          "threeHours": "En 3 horas",
+          "sixHours": "En 6 horas",
+          "twelveHours": "En 12 horas",
+          "eighteenHours": "En 18 horas",
+          "twentyFourHours": "En 24 horas",
+          "custom": "Personalizado"
+        }
+      },
+      "enableSavedCards": {
+        "title": "Activar tarjetas guardadas",
+        "description": "Cuando esta opción está activada, los clientes que han iniciado sesión pueden guardar una tarjeta al pagar y volver a pagar con ella más adelante, y sus tarjetas guardadas se ofrecen al finalizar la compra. Cuando está desactivada, nunca se ofrece guardar la tarjeta y las tarjetas guardadas se ocultan. A los invitados nunca se les ofrece guardar la tarjeta, independientemente de este ajuste."
+      },
+      "sessionTimeoutCustom": {
+        "title": "Valor de tiempo de expiración de sesión",
+        "description": "Configure el valor de timeout, de 1 a 1440 minutos",
+        "error": "El valor de tiempo de expiración de sesión debe ser un número entero de minutos entre 1 y 1440."
+      }
+    }
+  },
+  "payments": {
+    "configure": {
+      "fields": {
+        "buttonTitle": {
+          "label": "Título del botón de pago",
+          "description": "Texto personalizado para el botón de pago cuando se selecciona este método de pago. Dejar vacío para el valor predeterminado."
+        }
+      }
+    }
+  }
+}
