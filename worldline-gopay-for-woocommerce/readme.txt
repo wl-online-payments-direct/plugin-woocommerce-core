@@ -138,7 +138,7 @@ If that doesn’t solve the problem, create a thread on the [support forums](htt
 == Changelog ==
 
 = 3.0.0 - 2026-11-18 =
-* Initial version of the WooCommerce plugin on the Core architecture
+This release launches the pilot phase of the new major version of our WooCommerce integration. You can find our old version [here](https://github.com/wl-online-payments-direct/plugin-woocommerce/). The pilot is planned to run until end of April 2027. During this period, we will gather feedback and assess the new plugin with merchants and partners. The legacy and new plugins can coexist on the same WooCommerce installation, allowing you to try the new plugin while keeping the legacy one in place. An automatic migration of the legacy plugin’s configuration to the new plugin is included in this package
 
 == Frequently Asked Questions ==
 

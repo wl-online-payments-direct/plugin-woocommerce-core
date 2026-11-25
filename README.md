@@ -59,11 +59,11 @@ Worldline GoPay plugin supports over 25 global and local payment methods, includ
 
 You can accept payments in 150+ currencies and serve customers in 100+ countries, ensuring a localised and conversion-friendly experience for every buyer — no matter where they are.
 
-### Add Worldline GoPay payments to your WooCommerce store today
+### Add Worldline payments to your WooCommerce store today
 
 Choose the secure, reliable, and future-ready payments solution designed to support your store at every stage of growth. Install the Worldline GoPay WooCommerce plugin in just a few clicks and start accepting payments across 100+ countries immediately.
 
-### About Worldline GoPay
+### About Worldline
 
 Worldline GoPay is a leading global payments company with a unique mission: to turn payments from a simple necessity into a strategic advantage. As Europe’s leading payment service provider and ranked among the top worldwide, we power secure, frictionless online payment experiences.
 
@@ -136,4 +136,6 @@ If that doesn’t solve the problem, create a thread on the [support forums](htt
 ## Changelog
 
 ### 3.0.0 - 2026-11-18
-* Initial version of the WooCommerce plugin on the Core architecture
+This release launches the pilot phase of the new major version of our WooCommerce integration. You can find our old version [here](https://github.com/wl-online-payments-direct/plugin-woocommerce/).
+The pilot is planned to run until **end of April 2027**. During this period, we will gather feedback and assess the new plugin with merchants and partners.
+The legacy and new plugins can coexist on the same WooCommerce installation, allowing you to try the new plugin while keeping the legacy one in place. An automatic migration of the legacy plugin’s configuration to the new plugin is included in this package
